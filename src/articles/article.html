@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en ">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Blog</title>
+      <link rel="stylesheet" href="../../dist/style.css" />
+
+      <!-- FONT -->
+
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap"
+         rel="stylesheet"
+      />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cormorant+SC:wght@300;400;500;600;700&family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Serif+JP:wght@200..900&family=Prata&display=swap"
+         rel="stylesheet"
+      />
+
+      <!-- ICONS -->
+      <script
+         type="module"
+         src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+      ></script>
+      <script
+         nomodule
+         src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+      ></script>
+   </head>
+
+   <body class="text-xl text-slate-700 dark:bg-slate-500">
+      <!--==  HEADER  ==-->
+
+      <header>
+         <div
+            class="relative lg:flex lg:flex-col bg-gradient-to-r from-[#d2cfe4] from-0% via-[#edf1f5] via-[percentage:35%_65%] to-[#d2cfe4] to-100% dark:from-slate-800 dark:from-0% dark:via-slate-700 dark:via-[percentage:35%_65%] dark:to-slate-800 dark:to-100%"
+         >
+            <!-- LOGO -->
+
+            <div
+               class="flex justify-center py-6 xl:py-6 lg:order-1 lg:pt-0 md:pt-4 md:pb-8"
+            >
+               <div class="flex items-center gap-5">
+                  <img
+                     class="w-20 dark:contrast-50"
+                     src="../img/logo.png"
+                     alt=""
+                  />
+                  <span
+                     class="text-5xl font-black text-slate-800 bg-gradient-to-r from-[#475569] to-[#7a75aa] dark:from-white dark:to-[#bdbad5]"
+                     style="
+                        background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                     "
+                     >19th century</span
+                  >
+               </div>
+            </div>
+
+            <div
+               class="absolute top-0 right-0 flex items-center gap-10 p-10 text-2xl lg:static lg:justify-between lg:p-4 lg:pb-0 lg:opacity-50"
+            >
+               <!-- Dark mode btn -->
+
+               <div class="flex gap-3">
+                  <ion-icon
+                     class="cursor-auto dark:text-white"
+                     name="sunny-outline"
+                  ></ion-icon>
+
+                  <button
+                     id="dark-mode"
+                     class="relative w-12 h-6 transition rounded-full cursor-pointer bg-slate-500 hover:bg-slate-400 dark:bg-slate-400 dark:hover:bg-slate-300"
+                  >
+                     <span
+                        id="dot"
+                        class="absolute w-4 h-4 transition duration-300 rounded-full top-1 left-1 bg-slate-50 dark:bg-slate-600"
+                     ></span>
+                  </button>
+
+                  <ion-icon
+                     class="cursor-auto lg:hidden dark:text-white"
+                     name="moon-outline"
+                  ></ion-icon>
+               </div>
+
+               <!-- Search -->
+
+               <button class="h-10">
+                  <ion-icon
+                     class="p-2 transition rounded-full hover:bg-slate-50 hover:text-slate-500 dark:text-white dark:hover:bg-slate-400 dark:hover:text-slate-900"
+                     name="search-outline"
+                  ></ion-icon>
+               </button>
+            </div>
+         </div>
+
+         <div
+            class="h-[1px] bg-gradient-to-r from-white from-0% via-[#cbd5e1] via-[percentage:35%_65%] to-white to-100% dark:from-slate-800 dark:via-[#6a6880] dark:to-slate-800"
+         ></div>
+
+         <!--= NAVIGATION =-->
+
+         <nav
+            class="flex justify-center gap-5 text-slate-600 bg-gradient-to-r from-[#f1f5f9] via-[#edf1f5] to-[#f1f5f9] dark:from-slate-700 dark:from-0% dark:via-slate-700 dark:via-[percentage:35%_65%] dark:to-slate-700 dark:to-100% dark:text-slate-300"
+         >
+            <div class="absolute transition duration-700 bg-transparent"></div>
+            <a
+               class="py-4 transition duration-200 border-b-2 border-transparent hover:text-slate-400 hover:border-b-2 hover:border-b-slate-300"
+               href="../../index.html"
+               >Home</a
+            >
+            <span class="py-4">/</span>
+            <a
+               class="py-4 transition duration-200 border-b-2 border-transparent cursor-pointer hover:text-slate-400 hover:border-b-2 hover:border-b-slate-300"
+               href="../pages/archive.html"
+               >Archive</a
+            >
+            <span class="py-4">/</span>
+            <a
+               class="py-4 transition duration-200 border-b-2 border-transparent cursor-pointer hover:text-slate-400 hover:border-b-2 hover:border-b-slate-300"
+               href="../pages/about.html"
+               >About</a
+            >
+            <span class="py-4">/</span>
+            <a
+               class="py-4 transition duration-200 border-b-2 border-transparent cursor-pointer hover:text-slate-400 hover:border-b-2 hover:border-b-slate-300"
+               href="../pages/admin.html"
+               >Admin</a
+            >
+         </nav>
+      </header>
+
+      <!--==  ARTICLE  ==-->
+
+      <main class="grid py-20 md:py-14">
+         <section
+            class="flex flex-col w-1/2 gap-16 sm:gap-10 sm:w-10/12 2xl:w-8/12 xl:w-9/12 justify-self-center"
+         >
+            <!-- Headers -->
+
+            <div>
+               <!-- <h3 class="mb-6 text-8xl text-slate-600 dark:text-slate-200">
+                  History of Maneuver in Warfare
+               </h3> -->
+               <h3
+                  class="mb-6 text-8xl lg:text-7xl md:text-8xl sm:text-6xl bg-gradient-to-r from-slate-600 to-[#7a75aa] dark:from-slate-200 dark:to-[#d2cfe4]"
+                  style="
+                     background-clip: text;
+                     -webkit-text-fill-color: transparent;
+                  "
+               >
+                  History of Maneuver in Warfare
+               </h3>
+               <h2
+                  class="mb-6 text-4xl lg:text-3xl sm:text-2xl text-slate-500 dark:text-slate-300"
+               >
+                  Single Envelopment and Concentric Attacks
+               </h2>
+
+               <div class="flex gap-6 mb-4">
+                  <img
+                     class="w-1/12 rounded-full md:w-1/6 opacity-70"
+                     src="../img/img-2.png"
+                     alt=""
+                  />
+                  <div class="self-center dark:text-slate-300 text-slate-500">
+                     <h4 class="text-2xl sm:text-xl">
+                        By
+                        <a class="hover:underline" href="../pages/about.html"
+                           >David Maksic</a
+                        >
+                     </h4>
+                     <span class="text-lg">On april 20, 2022</span>
+                  </div>
+               </div>
+
+               <div
+                  class="h-[1px] bg-gradient-to-r from-slate-400 to-white to-100% dark:from-slate-400 dark:to-slate-500"
+               ></div>
+            </div>
+
+            <!-- Content -->
+
+            <img src="../img/blog-img.jpg" alt="" />
+
+            <div class="text-2xl text-slate-600 dark:text-slate-200">
+               <p>
+                  Military practitioners and thinkers have long recognized that
+                  battle is a unique enterprise subject to its own bizarre
+                  dynamics and logic. Indeed, the logic of battle frequently
+                  seems to be intrinsically paradoxical. The great historian of
+                  strategy, Edward Luttwak, favors the simple example of an army
+                  choosing between two roads to advance towards an objective -
+                  one paved and direct, the other circuitous and muddy. As
+                  Luttwak puts it, “only in the paradoxical realm of strategy
+                  would the choice arise at all, because it is only in war that
+                  a bad road can be good precisely because it is bad.” The
+                  benefit of taking the bad road, of course, may lie in the fact
+                  that the enemy is unlikely to expect it, thus allowing the
+                  advancing force to circumvent the enemy’s defenses.
+               </p>
+               <br />
+               <p>
+                  Let us begin at the beginning. Everybody dreads when authors
+                  define their terms, but I think in this case it is truly
+                  apropos. Let us define Battle as follows: organized groups of
+                  men deploying armed force against each other for the purpose
+                  of destroying the other’s ability to offer armed resistance.
+                  This purpose, of course, can be achieved by killing the enemy,
+                  capturing them, driving them from the field, or breaking their
+                  ability to resist by destroying their will to fight.
+               </p>
+               <br />
+               <p>
+                  When we say “organized groups of men”, we mean this in only
+                  the crudest sense of differentiating friend from foe. No
+                  doubt, the most archaic battles, fought as mankind first
+                  climbed out of hunter gatherer life into the first forms of
+                  political organization, consisted of little more than loosely
+                  organized mobs - but the political form, the identification of
+                  “us” and “them” with some political issue at stake, is what
+                  makes a battle a battle, rather than crude, animalistic
+                  violence.
+               </p>
+               <br />
+               <p>
+                  The crudest and most basic form of battle would consist of two
+                  groups of men of equal size and armed with equivalent weaponry
+                  hacking at each other in a disorganized melee. This sort of
+                  scene is instructive - imagining this as the most primitive
+                  form of battle, we can see that neither side holds any
+                  advantage or leverage. The outcome of the battle would simply
+                  be the compounded result of numerous close order fights
+                  between similarly armed men, fighting one on one. Writ large,
+                  the result of such a battle would be almost entirely up to
+                  chance - the leader has nothing to do but pray for the best.
+               </p>
+            </div>
+         </section>
+      </main>
+
+      <!--==  FOOTER  ==-->
+
+      <footer>
+         <div
+            class="text-center bg-gradient-to-r from-[#d2cfe4] from-0% via-[#edf1f5] via-[percentage:35%_65%] to-[#d2cfe4] to-100% dark:from-slate-700 dark:from-0% dark:via-slate-600 dark:via-[percentage:35%_65%] dark:to-slate-700 dark:to-100% dark:text-slate-300"
+         >
+            <!-- Logo -->
+
+            <div class="flex items-center justify-center gap-3 py-10 pt-14">
+               <img
+                  class="w-14 dark:contrast-50"
+                  src="../img/logo.png"
+                  alt=""
+               />
+               <span
+                  class="text-4xl font-black text-slate-600 bg-gradient-to-r from-[#475569] to-[#7a75aa] dark:from-white dark:to-[#bdbad5]"
+                  style="
+                     background-clip: text;
+                     -webkit-text-fill-color: transparent;
+                  "
+                  >19th century</span
+               >
+            </div>
+
+            <div
+               class="w-2/5 md:w-2/3 sm:w-11/12 h-[1px] mx-auto bg-gradient-to-r from-slate-200 via-violet to-slate-200 dark:from-slate-600 dark:via-violet dark:to-slate-600"
+            ></div>
+
+            <div class="flex justify-center w-2/6 gap-4 py-4 mx-auto">
+               <a class="hover:text-slate-400" href="../../index.html">Home</a>
+               <span>/</span>
+               <a class="hover:text-slate-400" href="../pages/archive.html"
+                  >Archive</a
+               >
+               <span>/</span>
+               <a class="hover:text-slate-400" href="../pages/about.html"
+                  >About</a
+               >
+               <span>/</span>
+               <a class="hover:text-slate-400" href="../pages/admin.html"
+                  >Admin</a
+               >
+            </div>
+
+            <div
+               class="w-2/5 md:w-2/3 sm:w-11/12 h-[1px] mx-auto bg-gradient-to-r from-slate-200 via-violet to-slate-200 dark:from-slate-600 dark:via-violet dark:to-slate-600"
+            ></div>
+
+            <div class="pt-16 pb-10">
+               <span>Copyright ©2024. All rights reserved. </span>
+               <span>Project for portfolio. </span>
+            </div>
+         </div>
+      </footer>
+      <script src="../../src/js/script.js"></script>
+   </body>
+</html>
