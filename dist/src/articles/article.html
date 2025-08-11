@@ -5,7 +5,6 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Blog</title>
       <link rel="stylesheet" href="/index.3b8cdc40.css">
-      <link rel="icon" href="/logo-sm.bb132471.png">
 
       <!-- FONT -->
 
@@ -60,7 +59,7 @@
 
          <nav class="flex justify-center gap-5 text-slate-600 bg-gradient-to-r from-[#f1f5f9] via-[#edf1f5] to-[#f1f5f9] dark:from-slate-700 dark:from-0% dark:via-slate-700 dark:via-[percentage:35%_65%] dark:to-slate-700 dark:to-100% dark:text-slate-300">
             <div class="absolute transition duration-700 bg-transparent"></div>
-            <a class="py-4 transition duration-200 border-b-2 border-transparent hover:text-slate-400 hover:border-b-2 hover:border-b-slate-300" href="#">Home</a>
+            <a class="py-4 transition duration-200 border-b-2 border-transparent hover:text-slate-400 hover:border-b-2 hover:border-b-slate-300" href="/index.html">Home</a>
             <span class="py-4">/</span>
             <a class="py-4 transition duration-200 border-b-2 border-transparent cursor-pointer hover:text-slate-400 hover:border-b-2 hover:border-b-slate-300" href="/src/pages/archive.html">Archive</a>
             <span class="py-4">/</span>
@@ -70,59 +69,101 @@
          </nav>
       </header>
 
-      <main>
-         <!--==  MAIN ARTICLE SECTION  ==-->
+      <!--==  ARTICLE  ==-->
 
-         <section class="pt-20 bg-transparent">
-            <div class="flex w-3/5 2xl:w-2/3 xl:w-3/4 lg:w-5/6 md:w-11/12 mx-auto bg-gradient-to-r from-[#f1f5f9] to-[#e2e8f0] dark:from-slate-600 dark:to-slate-700 sm:flex-col">
-               <img class="w-2/5 md:w-6/12 sm:w-full sm:h-64 sm:bg-slate-500 sm:object-cover sm:object-top" src="/img-1.d92bf256.jpg" alt="">
+      <main class="grid py-20 md:py-14">
+         <section class="flex flex-col w-1/2 gap-16 sm:gap-10 sm:w-10/12 2xl:w-8/12 xl:w-9/12 justify-self-center">
+            <!-- Headers -->
 
-               <!-- Article info -->
+            <div>
+               <!-- <h3 class="mb-6 text-8xl text-slate-600 dark:text-slate-200">
+                  History of Maneuver in Warfare
+               </h3> -->
+               <h3 class="mb-6 text-8xl lg:text-7xl md:text-8xl sm:text-6xl bg-gradient-to-r from-slate-600 to-[#7a75aa] dark:from-slate-200 dark:to-[#d2cfe4]" style="-webkit-text-fill-color: transparent; background-clip: text">
+                  History of Maneuver in Warfare
+               </h3>
+               <h2 class="mb-6 text-4xl lg:text-3xl sm:text-2xl text-slate-500 dark:text-slate-300">
+                  Single Envelopment and Concentric Attacks
+               </h2>
 
-               <div class="grid self-center justify-center gap-2 text-2xl text-center lg:gap-0 md:py-16 sm:py-10 sm:pb-12">
-                  <h2 class="w-3/4 pb-6 sm:pb-4 mx-0 text-6xl font-black text-slate-600 justify-self-center bg-gradient-to-r from-[#475569] to-[#7a75aa] dark:from-slate-200 dark:to-slate-200 md:w-full" style="-webkit-text-fill-color: transparent; background-clip: text">
-                     Russian historical figures
-                  </h2>
-
-                  <div class="w-4/5 h-[2px] mx-auto bg-gradient-to-r from-slate-200 via-violet to-slate-200 dark:from-[#3C4B5E] dark:via-[#a29ec4] dark:to-slate-700"></div>
-
-                  <h3 class="w-1/2 mx-auto my-2 text-slate-500 dark:text-slate-300">
-                     People from the east who have shaped history
-                  </h3>
-
-                  <div class="p-[2px] mt-2 cursor-pointer text-slate-600 justify-self-center bg-gradient-to-r from-slate-400 to-violet rounded-full">
-                     <button class="px-6 py-3 pt-2 rounded-full bg-neutral-50 hover:text-white hover:bg-gradient-to-r hover:from-slate-400 hover:to-violet dark:text-white dark:bg-gradient-to-r dark:from-slate-400 dark:to-violet dark:hover:from-white dark:hover:to-white dark:hover:text-slate-600">
-                        Read more &rarr;
-                     </button>
+               <div class="flex gap-6 mb-4">
+                  <img class="w-1/12 rounded-full md:w-1/6 opacity-70" src="/img-2.58261e83.png" alt="">
+                  <div class="self-center dark:text-slate-300 text-slate-500">
+                     <h4 class="text-2xl sm:text-xl">
+                        By
+                        <a class="hover:underline" href="/src/pages/about.html">David Maksic</a>
+                     </h4>
+                     <span class="text-lg">On april 20, 2022</span>
                   </div>
                </div>
+
+               <div class="h-[1px] bg-gradient-to-r from-slate-400 to-white to-100% dark:from-slate-400 dark:to-slate-500"></div>
             </div>
 
-            <!-- Other articles -->
+            <!-- Content -->
 
-            <div class="w-3/5 h-[2px] mt-20 mx-auto bg-slate-300 dark:bg-slate-600"></div>
+            <img src="/blog-img.8a648209.jpg" alt="">
 
-            <a href="/src/articles/article.html" class="flex justify-center mt-20 md:flex md:flex-col">
-               <div class="self-center p-6 px-16 text-center bg-slate-200 dark:bg-slate-400 w-96 md:w-3/4 md:px-4">
-                  <h3 class="mb-4 text-5xl text-slate-600 dark:text-slate-700">
-                     History of Maneuver in Warfare
-                  </h3>
-                  <h4 class="text-xl text-slate-600 dark:text-slate-600">
-                     Single Envelopment and Concentric Attacks
-                  </h4>
-                  <button class="transition px-3 py-1 pb-[8px] pl-4 rounded-full bg-slate-400 text-white hover:bg-white hover:text-slate-700 shadow-sm dark:text-slate-700 dark:bg-slate-300 mt-4 dark:hover:bg-slate-700 dark:hover:text-slate-100">
-                     Read more &rarr;
-                  </button>
-               </div>
-               <img class="w-2/5 lg:w-1/2 md:w-5/6 md:mx-auto" src="/blog-img.8a648209.jpg" alt="">
-            </a>
+            <div class="text-2xl text-slate-600 dark:text-slate-200">
+               <p>
+                  Military practitioners and thinkers have long recognized that
+                  battle is a unique enterprise subject to its own bizarre
+                  dynamics and logic. Indeed, the logic of battle frequently
+                  seems to be intrinsically paradoxical. The great historian of
+                  strategy, Edward Luttwak, favors the simple example of an army
+                  choosing between two roads to advance towards an objective -
+                  one paved and direct, the other circuitous and muddy. As
+                  Luttwak puts it, “only in the paradoxical realm of strategy
+                  would the choice arise at all, because it is only in war that
+                  a bad road can be good precisely because it is bad.” The
+                  benefit of taking the bad road, of course, may lie in the fact
+                  that the enemy is unlikely to expect it, thus allowing the
+                  advancing force to circumvent the enemy’s defenses.
+               </p>
+               <br>
+               <p>
+                  Let us begin at the beginning. Everybody dreads when authors
+                  define their terms, but I think in this case it is truly
+                  apropos. Let us define Battle as follows: organized groups of
+                  men deploying armed force against each other for the purpose
+                  of destroying the other’s ability to offer armed resistance.
+                  This purpose, of course, can be achieved by killing the enemy,
+                  capturing them, driving them from the field, or breaking their
+                  ability to resist by destroying their will to fight.
+               </p>
+               <br>
+               <p>
+                  When we say “organized groups of men”, we mean this in only
+                  the crudest sense of differentiating friend from foe. No
+                  doubt, the most archaic battles, fought as mankind first
+                  climbed out of hunter gatherer life into the first forms of
+                  political organization, consisted of little more than loosely
+                  organized mobs - but the political form, the identification of
+                  “us” and “them” with some political issue at stake, is what
+                  makes a battle a battle, rather than crude, animalistic
+                  violence.
+               </p>
+               <br>
+               <p>
+                  The crudest and most basic form of battle would consist of two
+                  groups of men of equal size and armed with equivalent weaponry
+                  hacking at each other in a disorganized melee. This sort of
+                  scene is instructive - imagining this as the most primitive
+                  form of battle, we can see that neither side holds any
+                  advantage or leverage. The outcome of the battle would simply
+                  be the compounded result of numerous close order fights
+                  between similarly armed men, fighting one on one. Writ large,
+                  the result of such a battle would be almost entirely up to
+                  chance - the leader has nothing to do but pray for the best.
+               </p>
+            </div>
          </section>
       </main>
 
       <!--==  FOOTER  ==-->
 
       <footer>
-         <div class="mt-40 text-center bg-gradient-to-r from-[#d2cfe4] from-0% via-[#edf1f5] via-[percentage:35%_65%] to-[#d2cfe4] to-100% dark:from-slate-700 dark:from-0% dark:via-slate-600 dark:via-[percentage:35%_65%] dark:to-slate-700 dark:to-100% dark:text-slate-300">
+         <div class="text-center bg-gradient-to-r from-[#d2cfe4] from-0% via-[#edf1f5] via-[percentage:35%_65%] to-[#d2cfe4] to-100% dark:from-slate-700 dark:from-0% dark:via-slate-600 dark:via-[percentage:35%_65%] dark:to-slate-700 dark:to-100% dark:text-slate-300">
             <!-- Logo -->
 
             <div class="flex items-center justify-center gap-3 py-10 pt-14">
@@ -133,7 +174,7 @@
             <div class="w-2/5 md:w-2/3 sm:w-11/12 h-[1px] mx-auto bg-gradient-to-r from-slate-200 via-violet to-slate-200 dark:from-slate-600 dark:via-violet dark:to-slate-600"></div>
 
             <div class="flex justify-center w-2/6 gap-4 py-4 mx-auto">
-               <a class="hover:text-slate-400" href="#">Home</a>
+               <a class="hover:text-slate-400" href="/index.html">Home</a>
                <span>/</span>
                <a class="hover:text-slate-400" href="/src/pages/archive.html">Archive</a>
                <span>/</span>

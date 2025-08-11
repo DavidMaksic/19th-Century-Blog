@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="en ">
+<html lang="en">
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Blog</title>
+      <title>Archive</title>
       <link rel="stylesheet" href="/index.3b8cdc40.css">
-      <link rel="icon" href="/logo-sm.bb132471.png">
 
       <!-- FONT -->
 
@@ -18,7 +17,6 @@
       <script src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" defer=""></script>
       <script nomodule="" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
    </head>
-
    <body class="text-xl text-slate-700 dark:bg-slate-500">
       <!--==  HEADER  ==-->
 
@@ -26,7 +24,7 @@
          <div class="relative lg:flex lg:flex-col bg-gradient-to-r from-[#d2cfe4] from-0% via-[#edf1f5] via-[percentage:35%_65%] to-[#d2cfe4] to-100% dark:from-slate-800 dark:from-0% dark:via-slate-700 dark:via-[percentage:35%_65%] dark:to-slate-800 dark:to-100%">
             <!-- LOGO -->
 
-            <div class="flex justify-center py-6 xl:py-6 lg:order-1 lg:pt-0 md:pt-4 md:pb-8">
+            <div class="flex justify-center py-6 xl:py-6 lg:order-1 lg:pt-0 md:pt-4">
                <div class="flex items-center gap-5">
                   <img class="w-20 dark:contrast-50" src="/logo.726d37a8.png" alt="">
                   <span class="text-5xl font-black text-slate-800 bg-gradient-to-r from-[#475569] to-[#7a75aa] dark:from-white dark:to-[#bdbad5]" style="-webkit-text-fill-color: transparent; background-clip: text">19th century</span>
@@ -60,69 +58,54 @@
 
          <nav class="flex justify-center gap-5 text-slate-600 bg-gradient-to-r from-[#f1f5f9] via-[#edf1f5] to-[#f1f5f9] dark:from-slate-700 dark:from-0% dark:via-slate-700 dark:via-[percentage:35%_65%] dark:to-slate-700 dark:to-100% dark:text-slate-300">
             <div class="absolute transition duration-700 bg-transparent"></div>
-            <a class="py-4 transition duration-200 border-b-2 border-transparent hover:text-slate-400 hover:border-b-2 hover:border-b-slate-300" href="#">Home</a>
+            <a class="py-4 transition duration-200 border-b-2 border-transparent hover:text-slate-400 hover:border-b-2 hover:border-b-slate-300" href="/index.html">Home</a>
             <span class="py-4">/</span>
             <a class="py-4 transition duration-200 border-b-2 border-transparent cursor-pointer hover:text-slate-400 hover:border-b-2 hover:border-b-slate-300" href="/src/pages/archive.html">Archive</a>
             <span class="py-4">/</span>
             <a class="py-4 transition duration-200 border-b-2 border-transparent cursor-pointer hover:text-slate-400 hover:border-b-2 hover:border-b-slate-300" href="/src/pages/about.html">About</a>
             <span class="py-4">/</span>
-            <a class="py-4 transition duration-200 border-b-2 border-transparent cursor-pointer hover:text-slate-400 hover:border-b-2 hover:border-b-slate-300" href="/src/pages/admin.html">Admin</a>
+            <a class="py-4 transition duration-200 border-b-2 border-transparent cursor-pointer hover:text-slate-400 hover:border-b-2 hover:border-b-slate-300" href="#">Admin</a>
          </nav>
       </header>
 
-      <main>
-         <!--==  MAIN ARTICLE SECTION  ==-->
+      <!--==  ABOUT  ==-->
 
-         <section class="pt-20 bg-transparent">
-            <div class="flex w-3/5 2xl:w-2/3 xl:w-3/4 lg:w-5/6 md:w-11/12 mx-auto bg-gradient-to-r from-[#f1f5f9] to-[#e2e8f0] dark:from-slate-600 dark:to-slate-700 sm:flex-col">
-               <img class="w-2/5 md:w-6/12 sm:w-full sm:h-64 sm:bg-slate-500 sm:object-cover sm:object-top" src="/img-1.d92bf256.jpg" alt="">
+      <main class="grid py-32">
+         <section class="w-1/2 justify-self-center xl:w-2/3 lg:w-3/4 md:w-4/5 sm:w-11/12 sm:text-xs">
+            <div id="posts" class="flex justify-between p-10 pb-8 sm:p-6 sm:items-center dark:bg-slate-600 bg-slate-100">
+               <h2 id="post" class="text-6xl sm:text-4xl font-bold dark:text-slate-100 bg-gradient-to-r from-slate-500 to-[#7a75aa] dark:from-white dark:to-[#bdbad5]" style="-webkit-text-fill-color: transparent; background-clip: text">
+                  Posts
+               </h2>
+               <a href="/src/pages/addpost.html" class="px-6 py-3 pb-4 text-4xl text-white transition rounded-full cursor-pointer sm:text-3xl sm:px-4 sm:py-2 sm:pb-3 dark:text-slate-600 dark:bg-slate-300 bg-slate-400 dark:hover:bg-slate-800 dark:hover:text-slate-200 hover:bg-white hover:text-slate-500 hover:shadow-md">
+                  + Add new
+               </a>
+            </div>
 
-               <!-- Article info -->
+            <!-- Article -->
 
-               <div class="grid self-center justify-center gap-2 text-2xl text-center lg:gap-0 md:py-16 sm:py-10 sm:pb-12">
-                  <h2 class="w-3/4 pb-6 sm:pb-4 mx-0 text-6xl font-black text-slate-600 justify-self-center bg-gradient-to-r from-[#475569] to-[#7a75aa] dark:from-slate-200 dark:to-slate-200 md:w-full" style="-webkit-text-fill-color: transparent; background-clip: text">
-                     Russian historical figures
-                  </h2>
+            <div class="flex justify-between px-10 py-6 transition-all sm:px-6 dark:bg-slate-700 bg-slate-200 sm:flex-col sm:gap-4">
+               <a class="text-3xl border-b-2 border-b-transparent text-slate-500 hover:border-b-slate-400 hover:text-slate-400 dark:text-slate-200 dark:hover:border-b-slate-50 dark:hover:text-white sm:text-center sm:border-none" href="#">Article</a>
 
-                  <div class="w-4/5 h-[2px] mx-auto bg-gradient-to-r from-slate-200 via-violet to-slate-200 dark:from-[#3C4B5E] dark:via-[#a29ec4] dark:to-slate-700"></div>
+               <div class="sm:h-[1px] sm:bg-gradient-to-r sm:from-slate-200 sm:from-0% sm:via-slate-500 sm:via-[percentage:35%_65%] sm:to-slate-200 sm:to-100% sm:dark:from-slate-700 sm:dark:via-[#bab7d5] sm:dark:to-slate-700"></div>
 
-                  <h3 class="w-1/2 mx-auto my-2 text-slate-500 dark:text-slate-300">
-                     People from the east who have shaped history
-                  </h3>
-
-                  <div class="p-[2px] mt-2 cursor-pointer text-slate-600 justify-self-center bg-gradient-to-r from-slate-400 to-violet rounded-full">
-                     <button class="px-6 py-3 pt-2 rounded-full bg-neutral-50 hover:text-white hover:bg-gradient-to-r hover:from-slate-400 hover:to-violet dark:text-white dark:bg-gradient-to-r dark:from-slate-400 dark:to-violet dark:hover:from-white dark:hover:to-white dark:hover:text-slate-600">
-                        Read more &rarr;
+               <div>
+                  <div class="flex text-3xl gap-14 sm:gap-0 sm:justify-between">
+                     <button class="border-b-2 dark:text-slate-200 dark:hover:text-white text-slate-500 hover:text-slate-400 border-b-transparent dark:hover:border-b-slate-200 hover:border-b-slate-400">
+                        Edit
+                     </button>
+                     <button class="border-b-2 dark:text-red hover:text-redhover text-red2 border-b-transparent hover:border-b-redhover">
+                        Delete
                      </button>
                   </div>
                </div>
             </div>
-
-            <!-- Other articles -->
-
-            <div class="w-3/5 h-[2px] mt-20 mx-auto bg-slate-300 dark:bg-slate-600"></div>
-
-            <a href="/src/articles/article.html" class="flex justify-center mt-20 md:flex md:flex-col">
-               <div class="self-center p-6 px-16 text-center bg-slate-200 dark:bg-slate-400 w-96 md:w-3/4 md:px-4">
-                  <h3 class="mb-4 text-5xl text-slate-600 dark:text-slate-700">
-                     History of Maneuver in Warfare
-                  </h3>
-                  <h4 class="text-xl text-slate-600 dark:text-slate-600">
-                     Single Envelopment and Concentric Attacks
-                  </h4>
-                  <button class="transition px-3 py-1 pb-[8px] pl-4 rounded-full bg-slate-400 text-white hover:bg-white hover:text-slate-700 shadow-sm dark:text-slate-700 dark:bg-slate-300 mt-4 dark:hover:bg-slate-700 dark:hover:text-slate-100">
-                     Read more &rarr;
-                  </button>
-               </div>
-               <img class="w-2/5 lg:w-1/2 md:w-5/6 md:mx-auto" src="/blog-img.8a648209.jpg" alt="">
-            </a>
          </section>
       </main>
 
       <!--==  FOOTER  ==-->
 
       <footer>
-         <div class="mt-40 text-center bg-gradient-to-r from-[#d2cfe4] from-0% via-[#edf1f5] via-[percentage:35%_65%] to-[#d2cfe4] to-100% dark:from-slate-700 dark:from-0% dark:via-slate-600 dark:via-[percentage:35%_65%] dark:to-slate-700 dark:to-100% dark:text-slate-300">
+         <div class="mt-10 text-center bg-gradient-to-r from-[#d2cfe4] from-0% via-[#edf1f5] via-[percentage:35%_65%] to-[#d2cfe4] to-100% dark:from-slate-700 dark:from-0% dark:via-slate-600 dark:via-[percentage:35%_65%] dark:to-slate-700 dark:to-100% dark:text-slate-300">
             <!-- Logo -->
 
             <div class="flex items-center justify-center gap-3 py-10 pt-14">
@@ -133,13 +116,13 @@
             <div class="w-2/5 md:w-2/3 sm:w-11/12 h-[1px] mx-auto bg-gradient-to-r from-slate-200 via-violet to-slate-200 dark:from-slate-600 dark:via-violet dark:to-slate-600"></div>
 
             <div class="flex justify-center w-2/6 gap-4 py-4 mx-auto">
-               <a class="hover:text-slate-400" href="#">Home</a>
+               <a class="hover:text-slate-400" href="/index.html">Home</a>
                <span>/</span>
                <a class="hover:text-slate-400" href="/src/pages/archive.html">Archive</a>
                <span>/</span>
                <a class="hover:text-slate-400" href="/src/pages/about.html">About</a>
                <span>/</span>
-               <a class="hover:text-slate-400" href="/src/pages/admin.html">Admin</a>
+               <a class="hover:text-slate-400" href="#">Admin</a>
             </div>
 
             <div class="w-2/5 md:w-2/3 sm:w-11/12 h-[1px] mx-auto bg-gradient-to-r from-slate-200 via-violet to-slate-200 dark:from-slate-600 dark:via-violet dark:to-slate-600"></div>
@@ -150,6 +133,7 @@
             </div>
          </div>
       </footer>
+
       <script src="/index.44983732.js"></script>
    </body>
 </html>
