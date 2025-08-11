@@ -4,5 +4,6 @@ My first attempt at creating a blog, using static HTML pages with basic JavaScri
 
 <br>
 
-You can check out the [live demo here](https://davidmaksic.github.io/19th-Century-Blog/).
+You can check out [the live demo here](https://davidmaksic.github.io/19th-Century-Blog/).
 
+![portfolio image](/src/img/project-image.png)
