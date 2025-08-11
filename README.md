@@ -8,4 +8,4 @@ You can check out the [live demo here](https://davidmaksic.github.io/19th-Centur
 
 <br>
 
-![portfolio image](/src/project-image.png)
+![portfolio image](/src/img/project-image.png)
