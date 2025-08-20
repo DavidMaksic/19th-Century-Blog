@@ -7,3 +7,11 @@ My first attempt at creating a blog, using static HTML pages with basic JavaScri
 You can check out [the live demo here](https://davidmaksic.github.io/19th-Century-Blog/).
 
 ![portfolio image](/src/img/project-image.png)
+
+<br>
+
+Installation:
+```
+npm i
+npm start
+```
