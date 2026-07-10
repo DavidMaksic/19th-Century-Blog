@@ -6,11 +6,6 @@ You can check out [the live demo here](https://davidmaksic.github.io/19th-Centur
 
 <br>
 
-Installation:
-```
-npm i && npm start
-```
-
 ![portfolio image](/src/img/project-image.png)
 
 
